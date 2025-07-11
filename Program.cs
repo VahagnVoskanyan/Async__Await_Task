@@ -1,10 +1,16 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using Async__Await_Task;
+
+/*Console.WriteLine("Hello, World!");
 
 await MakeTeaAsync();
 
 Console.WriteLine();
 
-await ThreadTask();
+await ThreadTask();*/
+
+Console.WriteLine();
+
+MasterThreadAndTasks.Run();
 
 async Task<string> MakeTeaAsync()
 {
