@@ -1,10 +1,11 @@
-﻿namespace Async__Await_Task
+﻿namespace Async_Await_Task
 {
     public static class MasterThreadAndTasks
     {
         public static void Run()
         {
-            Console.WriteLine("Start");
+            Console.WriteLine("Before");
+
             Console.WriteLine("Thread check 1: " + Environment.CurrentManagedThreadId);
             
             var task = new Task(() =>
@@ -17,7 +18,7 @@
             // Creates new thread to run the task
             task.Start();
 
-            Console.WriteLine("Finish");
+            Console.WriteLine("After");
 
             Console.WriteLine("Thread check 3: " + Environment.CurrentManagedThreadId);
 

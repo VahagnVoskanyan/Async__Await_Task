@@ -1,4 +1,4 @@
-﻿using Async__Await_Task;
+﻿using Async_Await_Task;
 
 /*Console.WriteLine("Hello, World!");
 
@@ -10,7 +10,9 @@ await ThreadTask();*/
 
 Console.WriteLine();
 
-MasterThreadAndTasks.Run();
+//MasterThreadAndTasks.Run();
+
+TPL.Run();
 
 async Task<string> MakeTeaAsync()
 {
