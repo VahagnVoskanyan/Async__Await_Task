@@ -1,10 +1,10 @@
 ﻿using Async_Await_Task;
 
-Console.WriteLine("Hello, World!");
+/*Console.WriteLine("Hello, World!");
 
 await AsyncAwaitTask.MakeTeaAsync();
 
-Console.WriteLine();
+Console.WriteLine();*/
 
 /*await ThreadTask();
 
@@ -13,4 +13,8 @@ Console.WriteLine();*/
 //MasterThreadAndTasks.Run();
 
 //TPL.Run();
+
+var a = new SemaphoreEx();
+
+a.Run();
 
